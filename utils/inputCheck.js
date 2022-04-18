@@ -19,3 +19,27 @@ module.exports = function(obj, ...props) {
   
   return null;
 };
+
+
+
+// function to return initials of first and last name
+// function abbrevName(name) {
+//   var nameArray = name.split(' ');
+//   return (nameArray[0][0] + "." + nameArray[1][0]).toUpperCase();
+// }
+
+function countSheeps() {
+  let arrayOfSheepsz = [true, false, true, true, false, true, true, false];
+  var num = 0;
+
+  for (var i = 0; i < arrayOfSheepsz.length; i++)
+    if(arrayOfSheepsz[i] == true)
+    num++;
+
+    return num;
+}
+// alternatively...
+
+// function countSheeps(arrayOfSheeps) {
+//  return arrayOfSheeps.filter(Boolean).length;  
+//}
